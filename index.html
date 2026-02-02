@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telur Asin Barokah - Gurih & Higienis</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header dengan logo dan nama toko -->
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <div class="logo">
+            <i class="fas fa-egg"></i>
+          </div>
+          <div class="store-info">
+            <h1>EggSalt</h1>
+            <p>Sejak 2026 • Terpercaya & Berkualitas</p>
+          </div>
+        </div>
+        <div class="tagline">
+          <p><i class="fas fa-star"></i> Gurih • Higienis • Tanpa Pengawet <i class="fas fa-star"></i></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten utama -->
+    <div class="main-content">
+      <!-- Galeri produk -->
+      <section class="product-gallery">
+        <h2 class="gallery-title"><i class="fas fa-images"></i> Galeri Produk</h2>
+        
+        <div class="gallery-wrapper">
+          <button class="nav-arrow prev" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="gallery-container" id="galleryContainer">
+            <!-- Slides akan diisi oleh JavaScript -->
+          </div>
+          
+          <button class="nav-arrow next" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        
+        <div class="gallery-nav" id="galleryNav">
+          <!-- Navigation dots akan diisi oleh JavaScript -->
+        </div>
+
+        <p class="image-caption">Telur Asin Berkualitas Premium</p>
+        
+        <div class="action-buttons">
+          <button class="btn btn-whatsapp" onclick="contactWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Hubungi Kami
+          </button>
+        </div>
+      </section>
+
+      <!-- Informasi produk -->
+      <section class="product-info">
+        <h2 class="section-title"><i class="fas fa-info-circle"></i> Tentang Produk</h2>
+        <p>Telur asin dibuat dari telur bebek pilihan dengan proses higienis menggunakan garam alami tanpa bahan pengawet. Diproses secara tradisional dengan sentuhan modern untuk menjaga cita rasa khas telur asin.</p>
+        
+        <h3 class="section-title" style="margin-top: 25px;"><i class="fas fa-clipboard-list"></i> Informasi Produk</h3>
+        <div class="product-details">
+          <ul>
+            <li><i class="fas fa-egg"></i> <strong>Isi:</strong> 6 butir per kemasan</li>
+            <li><i class="fas fa-seedling"></i> <strong>Bahan:</strong> Telur bebek organik & garam alami</li>
+            <li><i class="fas fa-clock"></i> <strong>Daya Simpan:</strong> ±14 hari (disimpan di tempat sejuk)</li>
+            <li><i class="fas fa-weight"></i> <strong>Berat:</strong> 500-600 gram per kemasan</li>
+            <li><i class="fas fa-award"></i> <strong>Sertifikasi:</strong> Higienis & Halal</li>
+          </ul>
+        </div>
+
+        <h3 class="section-title" style="margin-top: 25px;"><i class="fas fa-temperature-low"></i> Cara Penyimpanan</h3>
+        <p>Simpan di suhu ruang (≤25°C) atau kulkas untuk daya simpan lebih lama. Sebaiknya dikonsumsi dalam 2 minggu setelah pembelian untuk rasa terbaik.</p>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Telur asin. Hak Cipta Dilindungi.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Jl. Raya Tonjong - Pinangraja Km. 1, Desa Cicenang</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>(62+) 82121324045</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>EggSalt@gmail.com</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal untuk gambar fullscreen -->
+  <div class="modal-overlay" id="imageModal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-container">
+      <div class="modal-slider" id="modalSlider">
+        <!-- Modal slides akan diisi oleh JavaScript -->
+      </div>
+      <div class="modal-nav">
+        <button class="modal-arrow" onclick="prevModalSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-arrow" onclick="nextModalSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="modal-dots" id="modalDots">
+        <!-- Modal dots akan diisi oleh JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Telur floating sebagai elemen dekorasi -->
+  <div class="floating-egg" style="top: 10%; left: 5%;"></div>
+  <div class="floating-egg" style="top: 20%; right: 8%; animation-delay: -5s;"></div>
+  <div class="floating-egg" style="bottom: 15%; left: 10%; animation-delay: -10s;"></div>
+  <div class="floating-egg" style="bottom: 25%; right: 5%; animation-delay: -15s;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
